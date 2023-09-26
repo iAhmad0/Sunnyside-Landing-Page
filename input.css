@@ -1,0 +1,138 @@
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* General Rules */
+:root {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+
+    /* Primary colors */
+    --softRed: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dDesCyan: hsl(167, 40%, 24%);
+    --darkBlue: hsl(198, 62%, 26%);
+    --dModCyan: hsl(168, 34%, 41%);
+
+    /* Neutral colors */
+    --vdDesBlue: hsl(212, 27%, 19%);
+    --vdGrayishBlue: hsl(213, 9%, 39%);
+    --dGrayishBlue: hsl(232, 10%, 55%);
+    --grayishBlue: hsl(210, 4%, 67%);
+
+    /* Variations */
+    --moreRed: hsl(7, 99%, 70%, 0.3);
+    --moreYellow: hsl(51, 100%, 49%, 0.3);
+    --logoCyan: hsl(167, 40%, 24%, 0.85);
+    --footerCyan: hsl(167, 40%, 24%, 0.6);
+}
+
+
+
+/* Fonts & Weights */
+.fr-7 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+.fr-9 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+
+
+
+/* Styling Rules */
+* {
+    transition: all 0.25s ease-in-out;
+}
+
+
+
+/* Header Styling */
+header .menu:hover {
+    opacity: 0.7;
+}
+
+.arrow {
+    background: linear-gradient(-45deg, white 50%, transparent 50%);
+}
+
+a:hover .contact {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+
+
+/* Main Styling */
+.dgrbl {
+    color: var(--dGrayishBlue);
+}
+
+.vdesbl {
+    color: var(--vdDesBlue);
+}
+
+.bg-ylw {
+    background-color: var(--yellow);
+}
+
+.bg-yel {
+    background-color: var(--moreYellow);
+}
+
+a:hover .bg-yel {
+    background-color: var(--yellow);
+}
+
+.bg-red {
+    background-color: var(--moreRed);
+}
+
+a:hover .bg-red {
+    background-color: var(--softRed);
+}
+
+.dcyan {
+    color: var(--dDesCyan);
+}
+
+.dblue {
+    color: var(--darkBlue);
+}
+
+.grbl {
+    color: var(--grayishBlue);
+}
+
+.vdgrbl {
+    color: var(--vdGrayishBlue);
+}
+
+.bg-dmcyan {
+    background-color: hsl(168, 37%, 63%);
+}
+
+
+
+/* Footer Styling */
+.f-cyan {
+    color: var(--footerCyan);
+}
+
+.fi {
+    fill: var(--logoCyan) !important;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer a:hover path {
+    fill: white;
+}
